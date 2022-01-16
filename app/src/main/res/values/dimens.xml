@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_standard_2x">16dp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="dimen_standard_5x">40dp</dimen>
+    <dimen name="dimen_standard">8dp</dimen>
+    <dimen name="btn_long_length">300dp</dimen>
+    <dimen name="text_size_30sp">30sp</dimen>
+</resources>

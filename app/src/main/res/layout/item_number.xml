@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:background="@drawable/rect_rounded_border_only_primary"
+    android:id="@+id/layout"
+    android:layout_margin="@dimen/dimen_standard">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/cigarettes"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ContentDescription"
+        android:paddingStart="@dimen/dimen_standard"
+        android:paddingEnd="@dimen/dimen_standard" />
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:id="@+id/txt_number"
+        android:fontFamily="@font/lato"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/_20"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="@dimen/dimen_standard_2x"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/choosen"
+        android:background="@drawable/rect_rounded_filled_primary"
+        android:textColor="@color/colorAccent"
+        android:text="@string/_20"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:visibility="gone"/>
+</RelativeLayout>

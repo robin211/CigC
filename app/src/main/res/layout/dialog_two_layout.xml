@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dimen_standard_5x"
+    android:paddingStart="@dimen/dimen_standard_2x"
+    android:paddingEnd="@dimen/dimen_standard_2x">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_standard_2x"
+        android:text="@string/please_dont"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_standard_2x"
+        android:gravity="center"
+        android:text="@string/doing_this_will_lead_you_to_a_downward_spiral_of_despair_and_regret"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <com.royrodriguez.transitionbutton.TransitionButton
+        android:id="@+id/btn_ok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_standard_2x"
+        android:padding="@dimen/dimen_standard_2x"
+        android:text="@string/i_don_t_care"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        app:defaultColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        app:loaderColor="@color/colorPrimary" />
+
+    <com.royrodriguez.transitionbutton.TransitionButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_standard_2x"
+        android:padding="@dimen/dimen_standard_2x"
+        android:text="@string/i_gess_you_re_right"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        app:defaultColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_ok"
+        app:loaderColor="@color/colorAccent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
